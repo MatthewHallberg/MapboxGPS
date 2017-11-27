@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/LocationProvider.unity
+  isLoaded: 1
+  isActive: 1
