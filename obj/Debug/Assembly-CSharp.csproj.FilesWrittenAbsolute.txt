@@ -22,3 +22,7 @@
 /Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/matthew/Desktop/MapboxGPS/obj/Debug/Assembly-CSharp.dll
 /Users/matthew/Desktop/MapboxGPS/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparks.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparksRT.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparks.Api.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/BouncyCastle_GameSparks.dll

@@ -5,6 +5,7 @@ iOS
 12096ddf91bc99172a48b0419861fd00 Assembly-CSharp.dll:.PointCloudParticleExample
 c0faeb2c0521195994161aa295bd577a Assembly-CSharp.dll:.MessageBehavior
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameSparksRTUnity
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cac917711d0e84d412d48737b6fc9ae7 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 706b890efe0a474d76b40e459ddb3e76 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -22,6 +23,7 @@ c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.T
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Examples.ReverseGeocodeUserInput
 74602f47ac5939fc6675c58c724452bc Assembly-CSharp.dll:Mapbox.Unity.Map.RangeAroundTransformTileProvider
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SnapTerrainModifier
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GameSparks.Platforms.DefaultPlatform
 516e5cc4558edc3eaf07fa540ce485bf Assembly-CSharp.dll:.ColorPickerTester
 2b3291da89200462b2545a02cbc12439 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.VectorTileFactory
 9d094b02b16a0bb26c090239a64168b8 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.PrefabModifier
@@ -98,7 +100,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 ab06b6058fcbbcaa74a328639dc7d3e3 Assembly-CSharp.dll:Mapbox.Unity.Map.InitializeMapWithLocationProvider
 e81238197aa643d93e3d903c06302a67 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ColliderModifier
 f4386a940b0c945b42ba5098c696420b Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Filters.HeightFilter
-5eb997018be7778fbfcf3c1cffc789d7 Assembly-CSharp.dll:.UnityARCameraManager
+e3614d77c024e8379444f971096aaac4 Assembly-CSharp.dll:.UnityARCameraManager
 9ed622f1ea1aeb5f5018ad143a2009df Assembly-CSharp.dll:.UnityARFaceMeshManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Unity.Map.GlobeTileProvider
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Unity.Utilities.Runnable
@@ -179,6 +181,7 @@ e31ef279e8d06182f0817ebd899ff54c Assembly-CSharp.dll:.UnityARUserAnchorExample
 5511a49b5104d2e14b66af50a17125f0 Assembly-CSharp.dll:.ParticlePainter
 e460db8af525eb7c78c76a025f4acae9 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.TerrainFactory
 e2100106453ffa0f0485d9fa51b3b009 Assembly-CSharp.dll:Mapbox.Examples.ReloadMap
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DeviceAuthentication
 e353101906474689643fc3c6d0a3ba4a Assembly-CSharp.dll:.ColorPicker
 f3c78920fe48df8b0cb9a5df21c82d06 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.FlatTerrainFactory
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -200,6 +203,7 @@ f6dccfc611980e48234f29ac86dfc6a1 Assembly-CSharp.dll:Mapbox.Examples.Scripts.Uti
 c3bbced3b920c972296954f059b11c2e Assembly-CSharp.dll:UnityEngine.UI.BoxSlider
 7317d05fdc27591726053b234b9ea5ee Assembly-CSharp.dll:.ColorSliderImage
 dd9e526ff0048688a95ccb5807afc057 Assembly-CSharp.dll:Mapbox.Unity.Location.LocationProviderFactory
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LocalStorageService
 4da4da3ccc3d73b63daf7b6b2240656e Assembly-CSharp.dll:Mapbox.Unity.Map.CameraBoundsTileProvider
 52a93e2b3d8c5325282084d1f6989f55 Assembly-CSharp.dll:Mapbox.Examples.SpawnOnGlobeExample
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -211,8 +215,10 @@ e7fcf7b90f47d05b0aafa98e81d856d8 Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitRem
 c8b3a970a0bd54c4c79504e2a52ea626 Assembly-CSharp.dll:Mapbox.Examples.DynamicZoomCameraMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Filters.FilterBase
 9ffb7700875db16ad444cf26872589b9 Assembly-CSharp.dll:.HexColorField
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GameSparks.Platforms.WebSocketController
 bf09ee2e5fc51800c24bc9ad47088efd Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.AddMonoBehavioursModifier
 16ae33ee0fbf8362ac99a6fb3e017cb6 Assembly-CSharp.dll:.FocusSquare
+0c76bce9843a099aacd0237535a41196 Assembly-CSharp.dll:.GameSparksTestUI
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -226,6 +232,7 @@ aa4813d9e2a247785fb223838ed21c87 Assembly-CSharp.dll:Mapbox.Examples.Playground.
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARUserAnchorComponent
 b15500bf1b76bbde5922a3b83fc39627 Assembly-CSharp.dll:Mapbox.Examples.Playground.ForwardGeocoderExample
 1db2689b3233b29a96c693c2c074a142 Assembly-CSharp.dll:Mapbox.Unity.Map.DynamicZoomMapVisualizer
+e7cc82fe8897044aa37890c5eb3bfb9f Assembly-CSharp.dll:.GameSparksUnity
 6ff378b4630d84f63e95fc3d2b45eaf7 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TextureModifier
 03fadd777262cdaa131ac84a2e4aaa22 Assembly-CSharp.dll:Mapbox.Unity.Location.EditorLocationProvider
 d2c3a05474ea70332429208b2401eeff Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.HeightModifier
@@ -234,6 +241,7 @@ d2c3a05474ea70332429208b2401eeff Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierBase
 6ff378b4630d84f63e95fc3d2b45eaf7 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TextureMonoBehaviourModifier
 2b3291da89200462b2545a02cbc12439 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.MeshFactory
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameSparksManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BlendshapePrinter
 2e2a7bd47042749813855cedf111f699 Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARGeneratePlane
 ab32795e4d805b58f47e2b98596aa658 Assembly-CSharp.dll:Mapbox.Unity.Map.RangeTileProvider
@@ -246,6 +254,7 @@ f4322fc0f64b38fe7809a75cfdc78866 Assembly-CSharp.dll:Mapbox.Examples.Voxels.Voxe
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Examples.ObjectInspectorModifier
 971587ca2df0c4c8c8b238f96f6a6f33 Assembly-CSharp.dll:Mapbox.Unity.Location.TransformLocationProvider
 44a3dfd1a8522003ea79fe6180df91d5 Assembly-CSharp.dll:Mapbox.Unity.Map.DynamicZoomMap
+c82b4f672e2c88fcc54d5131943c7bb1 Assembly-CSharp.dll:.GameSparksSettings
 fd1441f74fdb9cec10ac22c943c596cd Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.LayerModifier
 a1d41d38fc0ffc365dc294688f92cb95 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Filters.TypeFilter
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.MeshModifier

@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MessageProvider.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DeviceAuthentication.cs">
     <Files>
-      <File FileName="Assets/MessageProvider.cs" Line="97" Column="84" />
-      <File FileName="Assets/Mapbox/Unity/Utilities/Conversions.cs" Line="20" Column="23" />
-      <File FileName="Assets/Mapbox/Unity/Location/DeviceLocationProvider.cs" Line="111" Column="49" />
-      <File FileName="Assets/CameraNorthBehavior.cs" Line="23" Column="33" />
-      <File FileName="Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARVideo.cs" Line="2" Column="28" />
-      <File FileName="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" Line="28" Column="1" />
+      <File FileName="Assets/MessageProvider.cs" Line="49" Column="25" />
+      <File FileName="Assets/GameSparksManager.cs" Line="9" Column="16" />
+      <File FileName="Assets/DeviceAuthentication.cs" Line="16" Column="81" />
+      <File FileName="Assets/GameSparks/GameSparksUnity.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -15,23 +15,7 @@ public class UnityARCameraManager : MonoBehaviour {
 	public bool getPointCloud = true;
 	public bool enableLightEstimation = true;
 
-	[Header("CAMERA COMPASS ALIGNMENT")]
-	private bool northHeadingSet = false;
-	public Transform CameraParent;
-
-	void Awake(){
-		if (Input.location.status == LocationServiceStatus.Stopped) {
-			Input.location.Start ();
-		}
-		Input.compass.enabled = true;
-		StartCoroutine(UpdateNorthRoutine());
-	}
-
-	IEnumerator UpdateNorthRoutine(){
-		yield return new WaitForSeconds (1f);
-		//now release camera control to arkit
-		northHeadingSet = true;
-	}
+	int framecount = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -93,19 +77,21 @@ public class UnityARCameraManager : MonoBehaviour {
 
 	void Update () {
 
-		if (northHeadingSet) {
+		if (m_camera != null) {	
+			// JUST WORKS!
+			Matrix4x4 matrix = m_session.GetCameraPose ();
+			m_camera.transform.localPosition = UnityARMatrixOps.GetPosition (matrix);
+			m_camera.transform.localRotation = UnityARMatrixOps.GetRotation (matrix);
 
-			if (m_camera != null) {	
-				// JUST WORKS!
-				Matrix4x4 matrix = m_session.GetCameraPose ();
-				m_camera.transform.localPosition = UnityARMatrixOps.GetPosition (matrix);
-				m_camera.transform.localRotation = UnityARMatrixOps.GetRotation (matrix);
+			m_camera.projectionMatrix = m_session.GetCameraProjection ();
 
-				m_camera.projectionMatrix = m_session.GetCameraProjection ();
+			framecount++;
+
+
+			if (framecount % 30 == 0) {
+				Debug.Log ("Camera: " + Camera.main.transform.position);
+				Debug.Log ("Parent: " + Camera.main.transform.parent.position);
 			}
-
-		} else {
-			CameraParent.transform.rotation = Quaternion.Euler (0, Input.compass.trueHeading, 0);
 		}
 	}
 }

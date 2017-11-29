@@ -51,6 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameSparks\Editor\GameSparksEditorFormUpload.cs" />
+     <Compile Include="Assets\GameSparks\Editor\GameSparksPopUp.cs" />
+     <Compile Include="Assets\GameSparks\Editor\GameSparksRestApi.cs" />
+     <Compile Include="Assets\GameSparks\Editor\GameSparksRestWindow.cs" />
+     <Compile Include="Assets\GameSparks\Editor\GameSparksSettingsEditor.cs" />
+     <Compile Include="Assets\GameSparks\Editor\GameSparksUnityInspector.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BboxToGeoCoordinateBoundsConverterTest.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BearingFilterTest.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\CanonicalTileIdTest.cs" />
@@ -106,6 +112,8 @@
      <Compile Include="Assets\Mapbox\Unity\Editor\VectorTileFactoryEditor.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
+     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
+     <None Include="Assets\GameSparks\Plugins\Metro\GameSparksRT.xml" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
@@ -115,6 +123,8 @@
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
+     <None Include="Assets\GameSparks\link.xml" />
+     <None Include="Assets\GameSparks\README.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -177,6 +187,18 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle_GameSparks">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/BouncyCastle_GameSparks.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparks.Api">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparks.Api.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparks">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparks.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparksRT">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparksRT.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.Json">
  <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>

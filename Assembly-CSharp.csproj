@@ -51,6 +51,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DeviceAuthentication.cs" />
+     <Compile Include="Assets\GameSparks\GameSparksRTUnity.cs" />
+     <Compile Include="Assets\GameSparks\GameSparksSettings.cs" />
+     <Compile Include="Assets\GameSparks\GameSparksUnity.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\DefaultPlatform.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\IControlledTimer.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\IControlledWebSocket.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\Native\detail\GameSparksNative.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\Native\detail\GameSparksNativePINVOKE.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\Native\detail\NativeWebSocket.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\Native\NativePlatform.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\Native\NativeWebSocket.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\PlatformBase.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\TimerController.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\UnityTimer.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\WebGL\SimpleJson2.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLPlatform.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLWebSocket.cs" />
+     <Compile Include="Assets\GameSparks\Platforms\WebSocketController.cs" />
+     <Compile Include="Assets\GameSparks\TestUI\GameSparksTestUI.cs" />
+     <Compile Include="Assets\GameSparksManager.cs" />
+     <Compile Include="Assets\LocalStorageService.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\DirectionResource.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Directions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Overview.cs" />
@@ -345,6 +367,8 @@
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingStateReason.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
+     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
+     <None Include="Assets\GameSparks\Plugins\Metro\GameSparksRT.xml" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
@@ -354,6 +378,8 @@
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
+     <None Include="Assets\GameSparks\link.xml" />
+     <None Include="Assets\GameSparks\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -374,6 +400,18 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle_GameSparks">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/BouncyCastle_GameSparks.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparks.Api">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparks.Api.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparks">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparks.dll</HintPath>
+ </Reference>
+ <Reference Include="GameSparksRT">
+ <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/GameSparks/Plugins/GameSparksRT.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.Json">
  <HintPath>/Users/matthew/Desktop/MapboxGPS/Assets/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>

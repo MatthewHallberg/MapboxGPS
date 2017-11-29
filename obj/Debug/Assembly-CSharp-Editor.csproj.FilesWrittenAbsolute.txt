@@ -40,3 +40,7 @@
 /Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparks.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparksRT.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/GameSparks.Api.dll
+/Users/matthew/Desktop/MapboxGPS/Temp/bin/Debug/BouncyCastle_GameSparks.dll
