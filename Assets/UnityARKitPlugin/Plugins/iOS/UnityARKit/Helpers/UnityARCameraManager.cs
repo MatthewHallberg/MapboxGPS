@@ -15,8 +15,6 @@ public class UnityARCameraManager : MonoBehaviour {
 	public bool getPointCloud = true;
 	public bool enableLightEstimation = true;
 
-	int framecount = 0;
-
 	// Use this for initialization
 	void Start () {
 
@@ -84,14 +82,6 @@ public class UnityARCameraManager : MonoBehaviour {
 			m_camera.transform.localRotation = UnityARMatrixOps.GetRotation (matrix);
 
 			m_camera.projectionMatrix = m_session.GetCameraProjection ();
-
-			framecount++;
-
-
-			if (framecount % 30 == 0) {
-				Debug.Log ("Camera: " + Camera.main.transform.position);
-				Debug.Log ("Parent: " + Camera.main.transform.parent.position);
-			}
 		}
 	}
 }

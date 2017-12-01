@@ -133,13 +133,10 @@ namespace Mapbox.Unity.Location
 
         void SendLocationUpdated(Vector2d location)
         {
-			Debug.Log ("~~~~~~!!!!!!!Location Updated");
-
-			GameObject.Find ("MainCanvas").SendMessage ("UpdateARMessageLocations");
-
             if (OnLocationUpdated != null)
             {
                 OnLocationUpdated(this, new LocationUpdatedEventArgs() { Location = location });
+				ARMessageProvider.Instance.UpdateARMessageLocations ();
             }
         }
     }

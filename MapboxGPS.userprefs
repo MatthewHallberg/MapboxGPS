@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DeviceAuthentication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MessageService.cs">
     <Files>
-      <File FileName="Assets/MessageProvider.cs" Line="49" Column="25" />
-      <File FileName="Assets/GameSparksManager.cs" Line="9" Column="16" />
-      <File FileName="Assets/DeviceAuthentication.cs" Line="16" Column="81" />
-      <File FileName="Assets/GameSparks/GameSparksUnity.cs" Line="1" Column="1" />
+      <File FileName="Assets/MessageService.cs" Line="26" Column="49" />
+      <File FileName="Assets/ARMessageProvider.cs" Line="18" Column="3" />
+      <File FileName="Assets/Message.cs" Line="7" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

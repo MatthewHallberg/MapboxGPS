@@ -52,7 +52,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4719187371535246}
-  - component: {fileID: 114361872912145316}
+  - component: {fileID: 114052361330912902}
   m_Layer: 0
   m_Name: PrefabMessage
   m_TagString: Untagged
@@ -154,7 +154,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
---- !u!114 &114361872912145316
+--- !u!114 &114052361330912902
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -162,12 +162,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1427464352122470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c55f7059bae46479d0a9a3fb618179, type: 3}
+  m_Script: {fileID: 11500000, guid: b08f32a6ce5bf40c3b9b22ef37a0bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageText: {fileID: 102935619152515062}
   latitude: 0
   longitude: 0
+  text: 
+  messageText: {fileID: 102935619152515062}
 --- !u!212 &212359900461758288
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec68a898ecab24a3a9b65dfc613878a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonCanvas: {fileID: 0}
 --- !u!114 &596010383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,8 +739,6 @@ GameObject:
   - component: {fileID: 987186003}
   - component: {fileID: 987186002}
   - component: {fileID: 987186001}
-  - component: {fileID: 987186000}
-  - component: {fileID: 987185999}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -747,36 +746,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &987185999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 987185998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f0b927eb94c4a5da89208fc0144699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _map: {fileID: 114606471}
-  cameraRotation: {x: 0, y: 0, z: 0, w: 0}
-  messagesRefs: []
-  mapPrefab: {fileID: 1045161168249962, guid: a7908f645b843407cb70f63d41903e37, type: 2}
-  messagePrefabAR: {fileID: 1427464352122470, guid: 097c2f25b45884c3eafbeee935a47d8e,
-    type: 2}
-  deviceLocation: {fileID: 1098163516}
-  editorLocation: {fileID: 1628209262}
---- !u!114 &987186000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 987185998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ee49978dddd4a8698dcd5cf50725d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &987186001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,7 +939,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 987186000}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneButtonDown
         m_Mode: 1
         m_Arguments:

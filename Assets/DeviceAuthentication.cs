@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DeviceAuthentication : MonoBehaviour {
 
+	public GameObject ButtonCanvas;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (DelayAuthenticateRoutine ());
@@ -18,11 +20,7 @@ public class DeviceAuthentication : MonoBehaviour {
 				Debug.Log("Device Authenticated...");
 
 				//make buttons appear here for saving messages once we are authenticated!!
-
-
-
-
-
+				ButtonCanvas.SetActive(true);
 
 			} else {
 				Debug.Log("Error Authenticating Device...");

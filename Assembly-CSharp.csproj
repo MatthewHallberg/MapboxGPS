@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ARMessageProvider.cs" />
      <Compile Include="Assets\DeviceAuthentication.cs" />
      <Compile Include="Assets\GameSparks\GameSparksRTUnity.cs" />
      <Compile Include="Assets\GameSparks\GameSparksSettings.cs" />
@@ -72,7 +73,6 @@
      <Compile Include="Assets\GameSparks\Platforms\WebSocketController.cs" />
      <Compile Include="Assets\GameSparks\TestUI\GameSparksTestUI.cs" />
      <Compile Include="Assets\GameSparksManager.cs" />
-     <Compile Include="Assets\LocalStorageService.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\DirectionResource.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Directions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Overview.cs" />
@@ -295,9 +295,7 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\TelemetryConfigurationButton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Message.cs" />
-     <Compile Include="Assets\MessageBehavior.cs" />
-     <Compile Include="Assets\MessageProvider.cs" />
-     <Compile Include="Assets\SceneService.cs" />
+     <Compile Include="Assets\MessageService.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectToEditor.cs" />
