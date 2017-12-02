@@ -22,9 +22,20 @@ public class MessageService : MonoBehaviour {
 	IEnumerator DelayTestMessage(){
 
 		yield return new WaitForSeconds (2f);
-
-		//SaveMessage (8.5123123f, 9.45323f, "Hello");
 		LoadAllMessages();
+	}
+
+	public void RemoveAllMessages(){
+		print ("WTFFF!!!!");
+		new GameSparks.Api.Requests.LogEventRequest ()
+			.SetEventKey ("REMOVE_MESSAGES")
+			.Send ((response) => {
+			if (!response.HasErrors) {
+				Debug.Log ("Message Saved To GameSparks...");
+			} else {
+				Debug.Log ("Error Saving Message Data...");
+			}
+		});
 	}
 
 	public void LoadAllMessages(){

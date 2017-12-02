@@ -296,6 +296,7 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Message.cs" />
      <Compile Include="Assets\MessageService.cs" />
+     <Compile Include="Assets\UIBehavior.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectToEditor.cs" />
@@ -377,6 +378,7 @@
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
      <None Include="Assets\GameSparks\link.xml" />
+     <None Include="Assets\CloudCode.txt" />
      <None Include="Assets\GameSparks\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

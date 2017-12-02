@@ -21,6 +21,7 @@ public class ARMessageProvider : MonoBehaviour {
 		foreach (GameObject messageObject in currentMessages) {
 			Destroy (messageObject);
 		}
+		currentMessages.Clear ();
 	}
 
 	public void LoadARMessages(List<GameObject> messageObjectList){

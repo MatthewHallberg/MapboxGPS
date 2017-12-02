@@ -14,7 +14,8 @@ public class Message : MonoBehaviour {
 	public TextMesh messageText;
 
 	public void SetText(string text){
-		messageText.text = text;
+		string newText = text.Replace (" ", "\n");
+		messageText.text = newText;
 	}
 	
 	// Update is called once per frame
