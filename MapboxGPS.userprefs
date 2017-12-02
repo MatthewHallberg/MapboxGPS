@@ -2,9 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MessageService.cs">
     <Files>
-      <File FileName="Assets/MessageService.cs" Line="26" Column="49" />
-      <File FileName="Assets/ARMessageProvider.cs" Line="18" Column="3" />
-      <File FileName="Assets/Message.cs" Line="7" Column="19" />
+      <File FileName="Assets/MessageService.cs" Line="29" Column="1" />
+      <File FileName="Assets/ARMessageProvider.cs" Line="20" Column="2" />
+      <File FileName="Assets/Message.cs" Line="18" Column="30" />
+      <File FileName="Assets/UIBehavior.cs" Line="56" Column="42" />
+      <File FileName="Assets/DeviceAuthentication.cs" Line="20" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

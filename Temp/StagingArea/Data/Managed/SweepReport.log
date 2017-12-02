@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 1
     Attributes = 187
   Total Field Removals = 1815
-  Total Method Removals = 15474
+  Total Method Removals = 15473
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: BouncyCastle_GameSparks
@@ -17158,7 +17158,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 44
   Total Field Removals = 49
-  Total Method Removals = 4888
+  Total Method Removals = 4887
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -18201,7 +18201,6 @@ Summary:
         set_sortingGridNormalizedSize(System.Int32)
         set_sortingLayerName(System.String)
         set_targetDisplay(System.Int32)
-        set_worldCamera(UnityEngine.Camera)
     UnityEngine.CanvasGroup
         .ctor()
         set_blocksRaycasts(System.Boolean)

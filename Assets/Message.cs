@@ -17,6 +17,10 @@ public class Message : MonoBehaviour {
 		string newText = text.Replace (" ", "\n");
 		messageText.text = newText;
 	}
+
+	void Start(){
+		messageText.GetComponent<Canvas> ().worldCamera = Camera.main;
+	}
 	
 	// Update is called once per frame
 	void Update () {

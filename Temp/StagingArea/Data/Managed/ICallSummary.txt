@@ -161,6 +161,7 @@ UnityEngine.Canvas::set_renderMode
 UnityEngine.Canvas::set_scaleFactor
 UnityEngine.Canvas::set_sortingLayerID
 UnityEngine.Canvas::set_sortingOrder
+UnityEngine.Canvas::set_worldCamera
 UnityEngine.Canvas::get_worldCamera
 UnityEngine.Canvas::get_rootCanvas
 UnityEngine.Canvas::GetDefaultCanvasMaterial

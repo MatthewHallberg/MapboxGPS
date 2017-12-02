@@ -26,7 +26,6 @@ public class MessageService : MonoBehaviour {
 	}
 
 	public void RemoveAllMessages(){
-		print ("WTFFF!!!!");
 		new GameSparks.Api.Requests.LogEventRequest ()
 			.SetEventKey ("REMOVE_MESSAGES")
 			.Send ((response) => {

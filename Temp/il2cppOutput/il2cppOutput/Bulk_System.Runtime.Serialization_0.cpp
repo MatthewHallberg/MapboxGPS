@@ -19,21 +19,21 @@
 #include "object-internals.h"
 
 // System.Runtime.Serialization.DataContractAttribute
-struct DataContractAttribute_t501803903;
+struct DataContractAttribute_t1007525229;
 // System.Runtime.Serialization.DataMemberAttribute
-struct DataMemberAttribute_t3951627545;
+struct DataMemberAttribute_t1679713602;
 // System.String
 struct String_t;
 // System.Runtime.Serialization.EnumMemberAttribute
-struct EnumMemberAttribute_t840077060;
+struct EnumMemberAttribute_t1035526708;
 // System.Char[]
-struct CharU5BU5D_t1565992178;
+struct CharU5BU5D_t52468358;
 
 
 
 
-#ifndef U3CMODULEU3E_T1335858002_H
-#define U3CMODULEU3E_T1335858002_H
+#ifndef U3CMODULEU3E_T1127625089_H
+#define U3CMODULEU3E_T1127625089_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -41,7 +41,7 @@ struct CharU5BU5D_t1565992178;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t1335858002 
+struct  U3CModuleU3E_t1127625089 
 {
 public:
 
@@ -51,7 +51,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T1335858002_H
+#endif // U3CMODULEU3E_T1127625089_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -122,7 +122,7 @@ public:
 	// System.String System.String::Empty
 	String_t* ___Empty_2;
 	// System.Char[] System.String::WhiteChars
-	CharU5BU5D_t1565992178* ___WhiteChars_3;
+	CharU5BU5D_t52468358* ___WhiteChars_3;
 
 public:
 	inline static int32_t get_offset_of_Empty_2() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___Empty_2)); }
@@ -135,9 +135,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_WhiteChars_3() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___WhiteChars_3)); }
-	inline CharU5BU5D_t1565992178* get_WhiteChars_3() const { return ___WhiteChars_3; }
-	inline CharU5BU5D_t1565992178** get_address_of_WhiteChars_3() { return &___WhiteChars_3; }
-	inline void set_WhiteChars_3(CharU5BU5D_t1565992178* value)
+	inline CharU5BU5D_t52468358* get_WhiteChars_3() const { return ___WhiteChars_3; }
+	inline CharU5BU5D_t52468358** get_address_of_WhiteChars_3() { return &___WhiteChars_3; }
+	inline void set_WhiteChars_3(CharU5BU5D_t52468358* value)
 	{
 		___WhiteChars_3 = value;
 		Il2CppCodeGenWriteBarrier((&___WhiteChars_3), value);
@@ -148,8 +148,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // STRING_T_H
-#ifndef ATTRIBUTE_T4043032847_H
-#define ATTRIBUTE_T4043032847_H
+#ifndef ATTRIBUTE_T2733848937_H
+#define ATTRIBUTE_T2733848937_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -157,7 +157,7 @@ public:
 #endif
 
 // System.Attribute
-struct  Attribute_t4043032847  : public RuntimeObject
+struct  Attribute_t2733848937  : public RuntimeObject
 {
 public:
 
@@ -167,9 +167,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ATTRIBUTE_T4043032847_H
-#ifndef VALUETYPE_T899977641_H
-#define VALUETYPE_T899977641_H
+#endif // ATTRIBUTE_T2733848937_H
+#ifndef VALUETYPE_T1579504895_H
+#define VALUETYPE_T1579504895_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -177,7 +177,7 @@ public:
 #endif
 
 // System.ValueType
-struct  ValueType_t899977641  : public RuntimeObject
+struct  ValueType_t1579504895  : public RuntimeObject
 {
 public:
 
@@ -188,16 +188,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 // Native definition for P/Invoke marshalling of System.ValueType
-struct ValueType_t899977641_marshaled_pinvoke
+struct ValueType_t1579504895_marshaled_pinvoke
 {
 };
 // Native definition for COM marshalling of System.ValueType
-struct ValueType_t899977641_marshaled_com
+struct ValueType_t1579504895_marshaled_com
 {
 };
-#endif // VALUETYPE_T899977641_H
-#ifndef DATACONTRACTATTRIBUTE_T501803903_H
-#define DATACONTRACTATTRIBUTE_T501803903_H
+#endif // VALUETYPE_T1579504895_H
+#ifndef DATACONTRACTATTRIBUTE_T1007525229_H
+#define DATACONTRACTATTRIBUTE_T1007525229_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -205,14 +205,14 @@ struct ValueType_t899977641_marshaled_com
 #endif
 
 // System.Runtime.Serialization.DataContractAttribute
-struct  DataContractAttribute_t501803903  : public Attribute_t4043032847
+struct  DataContractAttribute_t1007525229  : public Attribute_t2733848937
 {
 public:
 	// System.Boolean System.Runtime.Serialization.DataContractAttribute::<IsReference>k__BackingField
 	bool ___U3CIsReferenceU3Ek__BackingField_0;
 
 public:
-	inline static int32_t get_offset_of_U3CIsReferenceU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(DataContractAttribute_t501803903, ___U3CIsReferenceU3Ek__BackingField_0)); }
+	inline static int32_t get_offset_of_U3CIsReferenceU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(DataContractAttribute_t1007525229, ___U3CIsReferenceU3Ek__BackingField_0)); }
 	inline bool get_U3CIsReferenceU3Ek__BackingField_0() const { return ___U3CIsReferenceU3Ek__BackingField_0; }
 	inline bool* get_address_of_U3CIsReferenceU3Ek__BackingField_0() { return &___U3CIsReferenceU3Ek__BackingField_0; }
 	inline void set_U3CIsReferenceU3Ek__BackingField_0(bool value)
@@ -224,9 +224,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATACONTRACTATTRIBUTE_T501803903_H
-#ifndef BOOLEAN_T3859917295_H
-#define BOOLEAN_T3859917295_H
+#endif // DATACONTRACTATTRIBUTE_T1007525229_H
+#ifndef BOOLEAN_T2264804764_H
+#define BOOLEAN_T2264804764_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -234,14 +234,14 @@ public:
 #endif
 
 // System.Boolean
-struct  Boolean_t3859917295 
+struct  Boolean_t2264804764 
 {
 public:
 	// System.Boolean System.Boolean::m_value
 	bool ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Boolean_t3859917295, ___m_value_2)); }
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Boolean_t2264804764, ___m_value_2)); }
 	inline bool get_m_value_2() const { return ___m_value_2; }
 	inline bool* get_address_of_m_value_2() { return &___m_value_2; }
 	inline void set_m_value_2(bool value)
@@ -250,7 +250,7 @@ public:
 	}
 };
 
-struct Boolean_t3859917295_StaticFields
+struct Boolean_t2264804764_StaticFields
 {
 public:
 	// System.String System.Boolean::FalseString
@@ -259,7 +259,7 @@ public:
 	String_t* ___TrueString_1;
 
 public:
-	inline static int32_t get_offset_of_FalseString_0() { return static_cast<int32_t>(offsetof(Boolean_t3859917295_StaticFields, ___FalseString_0)); }
+	inline static int32_t get_offset_of_FalseString_0() { return static_cast<int32_t>(offsetof(Boolean_t2264804764_StaticFields, ___FalseString_0)); }
 	inline String_t* get_FalseString_0() const { return ___FalseString_0; }
 	inline String_t** get_address_of_FalseString_0() { return &___FalseString_0; }
 	inline void set_FalseString_0(String_t* value)
@@ -268,7 +268,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___FalseString_0), value);
 	}
 
-	inline static int32_t get_offset_of_TrueString_1() { return static_cast<int32_t>(offsetof(Boolean_t3859917295_StaticFields, ___TrueString_1)); }
+	inline static int32_t get_offset_of_TrueString_1() { return static_cast<int32_t>(offsetof(Boolean_t2264804764_StaticFields, ___TrueString_1)); }
 	inline String_t* get_TrueString_1() const { return ___TrueString_1; }
 	inline String_t** get_address_of_TrueString_1() { return &___TrueString_1; }
 	inline void set_TrueString_1(String_t* value)
@@ -281,9 +281,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // BOOLEAN_T3859917295_H
-#ifndef DATAMEMBERATTRIBUTE_T3951627545_H
-#define DATAMEMBERATTRIBUTE_T3951627545_H
+#endif // BOOLEAN_T2264804764_H
+#ifndef DATAMEMBERATTRIBUTE_T1679713602_H
+#define DATAMEMBERATTRIBUTE_T1679713602_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -291,7 +291,7 @@ public:
 #endif
 
 // System.Runtime.Serialization.DataMemberAttribute
-struct  DataMemberAttribute_t3951627545  : public Attribute_t4043032847
+struct  DataMemberAttribute_t1679713602  : public Attribute_t2733848937
 {
 public:
 	// System.Boolean System.Runtime.Serialization.DataMemberAttribute::is_required
@@ -304,7 +304,7 @@ public:
 	int32_t ___order_3;
 
 public:
-	inline static int32_t get_offset_of_is_required_0() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t3951627545, ___is_required_0)); }
+	inline static int32_t get_offset_of_is_required_0() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t1679713602, ___is_required_0)); }
 	inline bool get_is_required_0() const { return ___is_required_0; }
 	inline bool* get_address_of_is_required_0() { return &___is_required_0; }
 	inline void set_is_required_0(bool value)
@@ -312,7 +312,7 @@ public:
 		___is_required_0 = value;
 	}
 
-	inline static int32_t get_offset_of_emit_default_1() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t3951627545, ___emit_default_1)); }
+	inline static int32_t get_offset_of_emit_default_1() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t1679713602, ___emit_default_1)); }
 	inline bool get_emit_default_1() const { return ___emit_default_1; }
 	inline bool* get_address_of_emit_default_1() { return &___emit_default_1; }
 	inline void set_emit_default_1(bool value)
@@ -320,7 +320,7 @@ public:
 		___emit_default_1 = value;
 	}
 
-	inline static int32_t get_offset_of_name_2() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t3951627545, ___name_2)); }
+	inline static int32_t get_offset_of_name_2() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t1679713602, ___name_2)); }
 	inline String_t* get_name_2() const { return ___name_2; }
 	inline String_t** get_address_of_name_2() { return &___name_2; }
 	inline void set_name_2(String_t* value)
@@ -329,7 +329,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___name_2), value);
 	}
 
-	inline static int32_t get_offset_of_order_3() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t3951627545, ___order_3)); }
+	inline static int32_t get_offset_of_order_3() { return static_cast<int32_t>(offsetof(DataMemberAttribute_t1679713602, ___order_3)); }
 	inline int32_t get_order_3() const { return ___order_3; }
 	inline int32_t* get_address_of_order_3() { return &___order_3; }
 	inline void set_order_3(int32_t value)
@@ -341,9 +341,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATAMEMBERATTRIBUTE_T3951627545_H
-#ifndef INT32_T3299432178_H
-#define INT32_T3299432178_H
+#endif // DATAMEMBERATTRIBUTE_T1679713602_H
+#ifndef INT32_T2978138258_H
+#define INT32_T2978138258_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -351,14 +351,14 @@ public:
 #endif
 
 // System.Int32
-struct  Int32_t3299432178 
+struct  Int32_t2978138258 
 {
 public:
 	// System.Int32 System.Int32::m_value
 	int32_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Int32_t3299432178, ___m_value_2)); }
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Int32_t2978138258, ___m_value_2)); }
 	inline int32_t get_m_value_2() const { return ___m_value_2; }
 	inline int32_t* get_address_of_m_value_2() { return &___m_value_2; }
 	inline void set_m_value_2(int32_t value)
@@ -370,9 +370,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // INT32_T3299432178_H
-#ifndef ENUMMEMBERATTRIBUTE_T840077060_H
-#define ENUMMEMBERATTRIBUTE_T840077060_H
+#endif // INT32_T2978138258_H
+#ifndef ENUMMEMBERATTRIBUTE_T1035526708_H
+#define ENUMMEMBERATTRIBUTE_T1035526708_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -380,14 +380,14 @@ public:
 #endif
 
 // System.Runtime.Serialization.EnumMemberAttribute
-struct  EnumMemberAttribute_t840077060  : public Attribute_t4043032847
+struct  EnumMemberAttribute_t1035526708  : public Attribute_t2733848937
 {
 public:
 	// System.String System.Runtime.Serialization.EnumMemberAttribute::value
 	String_t* ___value_0;
 
 public:
-	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(EnumMemberAttribute_t840077060, ___value_0)); }
+	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(EnumMemberAttribute_t1035526708, ___value_0)); }
 	inline String_t* get_value_0() const { return ___value_0; }
 	inline String_t** get_address_of_value_0() { return &___value_0; }
 	inline void set_value_0(String_t* value)
@@ -400,7 +400,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ENUMMEMBERATTRIBUTE_T840077060_H
+#endif // ENUMMEMBERATTRIBUTE_T1035526708_H
 
 
 
@@ -410,7 +410,7 @@ public:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Boolean System.Runtime.Serialization.DataContractAttribute::get_IsReference()
-extern "C"  bool DataContractAttribute_get_IsReference_m4221525960 (DataContractAttribute_t501803903 * __this, const RuntimeMethod* method)
+extern "C"  bool DataContractAttribute_get_IsReference_m3383567915 (DataContractAttribute_t1007525229 * __this, const RuntimeMethod* method)
 {
 	{
 		bool L_0 = __this->get_U3CIsReferenceU3Ek__BackingField_0();
@@ -418,7 +418,7 @@ extern "C"  bool DataContractAttribute_get_IsReference_m4221525960 (DataContract
 	}
 }
 // System.Boolean System.Runtime.Serialization.DataMemberAttribute::get_EmitDefaultValue()
-extern "C"  bool DataMemberAttribute_get_EmitDefaultValue_m1083234927 (DataMemberAttribute_t3951627545 * __this, const RuntimeMethod* method)
+extern "C"  bool DataMemberAttribute_get_EmitDefaultValue_m3062961525 (DataMemberAttribute_t1679713602 * __this, const RuntimeMethod* method)
 {
 	{
 		bool L_0 = __this->get_emit_default_1();
@@ -426,7 +426,7 @@ extern "C"  bool DataMemberAttribute_get_EmitDefaultValue_m1083234927 (DataMembe
 	}
 }
 // System.Boolean System.Runtime.Serialization.DataMemberAttribute::get_IsRequired()
-extern "C"  bool DataMemberAttribute_get_IsRequired_m337366993 (DataMemberAttribute_t3951627545 * __this, const RuntimeMethod* method)
+extern "C"  bool DataMemberAttribute_get_IsRequired_m3413276111 (DataMemberAttribute_t1679713602 * __this, const RuntimeMethod* method)
 {
 	{
 		bool L_0 = __this->get_is_required_0();
@@ -434,7 +434,7 @@ extern "C"  bool DataMemberAttribute_get_IsRequired_m337366993 (DataMemberAttrib
 	}
 }
 // System.String System.Runtime.Serialization.DataMemberAttribute::get_Name()
-extern "C"  String_t* DataMemberAttribute_get_Name_m3328516712 (DataMemberAttribute_t3951627545 * __this, const RuntimeMethod* method)
+extern "C"  String_t* DataMemberAttribute_get_Name_m2403297632 (DataMemberAttribute_t1679713602 * __this, const RuntimeMethod* method)
 {
 	{
 		String_t* L_0 = __this->get_name_2();
@@ -442,7 +442,7 @@ extern "C"  String_t* DataMemberAttribute_get_Name_m3328516712 (DataMemberAttrib
 	}
 }
 // System.Int32 System.Runtime.Serialization.DataMemberAttribute::get_Order()
-extern "C"  int32_t DataMemberAttribute_get_Order_m1956710038 (DataMemberAttribute_t3951627545 * __this, const RuntimeMethod* method)
+extern "C"  int32_t DataMemberAttribute_get_Order_m1939669476 (DataMemberAttribute_t1679713602 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = __this->get_order_3();
@@ -450,7 +450,7 @@ extern "C"  int32_t DataMemberAttribute_get_Order_m1956710038 (DataMemberAttribu
 	}
 }
 // System.String System.Runtime.Serialization.EnumMemberAttribute::get_Value()
-extern "C"  String_t* EnumMemberAttribute_get_Value_m3117753503 (EnumMemberAttribute_t840077060 * __this, const RuntimeMethod* method)
+extern "C"  String_t* EnumMemberAttribute_get_Value_m144550528 (EnumMemberAttribute_t1035526708 * __this, const RuntimeMethod* method)
 {
 	{
 		String_t* L_0 = __this->get_value_0();
