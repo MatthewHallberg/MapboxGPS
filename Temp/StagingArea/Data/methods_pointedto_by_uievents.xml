@@ -1,9 +1,0 @@
-<linker>
-	<assembly fullname="Assembly-CSharp">
-		<type fullname="UIBehavior">
-			<method name="RemoveButtonDown"/>
-			<method name="SubmitButtonDown"/>
-			<method name="MessageButtonDown"/>
-		</type>
-	</assembly>
-</linker>

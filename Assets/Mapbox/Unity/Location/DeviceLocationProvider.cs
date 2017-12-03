@@ -18,14 +18,14 @@ namespace Mapbox.Unity.Location
         /// Values like 5-10 could be used for getting best accuracy.
         /// </summary>
         [SerializeField]
-        float _desiredAccuracyInMeters = 5f;
+        float _desiredAccuracyInMeters = .1f;
 
         /// <summary>
         /// The minimum distance (measured in meters) a device must move laterally before Input.location property is updated. 
         /// Higher values like 500 imply less overhead.
         /// </summary>
         [SerializeField]
-        float _updateDistanceInMeters = 5f;
+        float _updateDistanceInMeters = .1f;
 
         Coroutine _pollRoutine;
 
@@ -33,9 +33,11 @@ namespace Mapbox.Unity.Location
 
         double _lastHeadingTimestamp;
 
+		int updateNum = 0;
+
         WaitForSeconds _wait;
 
-        Vector2d _location;
+        public Vector2d _location;
         /// <summary>
         /// Gets the current cached location.
         /// </summary>
@@ -65,7 +67,6 @@ namespace Mapbox.Unity.Location
             {
                 _pollRoutine = StartCoroutine(PollLocationRoutine());
             }
-
 
         }
 
@@ -116,7 +117,10 @@ namespace Mapbox.Unity.Location
                 if (Input.location.status == LocationServiceStatus.Running && timestamp > _lastLocationTimestamp)
                 {
                     _location = new Vector2d(Input.location.lastData.latitude, Input.location.lastData.longitude);
-                    SendLocationUpdated(_location);
+					ARMessageProvider.Instance.UpdateARMessageLocations (_location);
+					updateNum++;
+					Debug.Log ("SENDING UPDATE! " + updateNum);
+					SendLocationUpdated (_location);
                     _lastLocationTimestamp = timestamp;
                 }
                 yield return null;
@@ -133,11 +137,11 @@ namespace Mapbox.Unity.Location
 
         void SendLocationUpdated(Vector2d location)
         {
-            if (OnLocationUpdated != null)
-            {
-                OnLocationUpdated(this, new LocationUpdatedEventArgs() { Location = location });
-				ARMessageProvider.Instance.UpdateARMessageLocations ();
-            }
+			//this function does not get called and I don't know why!!!!??????????
+
+			if (OnHeadingUpdated != null) {
+				OnLocationUpdated (this, new LocationUpdatedEventArgs () { Location = location });
+			}
         }
     }
 }
