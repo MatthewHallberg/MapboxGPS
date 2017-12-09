@@ -244,7 +244,7 @@ d2c3a05474ea70332429208b2401eeff Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BlendshapePrinter
 2e2a7bd47042749813855cedf111f699 Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARGeneratePlane
 ab32795e4d805b58f47e2b98596aa658 Assembly-CSharp.dll:Mapbox.Unity.Map.RangeTileProvider
-2a4696b37d816179db982a3fc21b25fe Assembly-CSharp.dll:Mapbox.Unity.Location.DeviceLocationProvider
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Unity.Location.DeviceLocationProvider
 27eb4c0a308e905ca7969a5b86bd51ef Assembly-CSharp.dll:.ARMessageProvider
 48b4f2bb90cadfa8931f7d8baac4245e Assembly-CSharp.dll:.ColorSlider
 ae9dce8d90505348dcfb3009a17849b5 Assembly-CSharp.dll:Mapbox.Unity.Map.MapAtSpecificLocation

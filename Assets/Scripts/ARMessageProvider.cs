@@ -5,7 +5,10 @@ using Mapbox.Unity.Utilities;
 using Mapbox.Utils;
 
 public class ARMessageProvider : MonoBehaviour {
-	
+	/// <summary>
+	/// This loads messages according to GPS coordinates, removes messages, and repositions messages
+	/// within the scene. 
+	/// </summary>
 	private static ARMessageProvider _instance;
 	public static ARMessageProvider Instance { get { return _instance; } } 
 
@@ -28,6 +31,7 @@ public class ARMessageProvider : MonoBehaviour {
 		StartCoroutine (LoadARMessagesRoutine (messageObjectList));
 	}
 
+	//this placed initial messages after they are loaded in from gamesparks
 	IEnumerator LoadARMessagesRoutine(List<GameObject> messageObjectList){
 
 		RemoveCurrentMessages ();
@@ -58,11 +62,12 @@ public class ARMessageProvider : MonoBehaviour {
 			currentMessages.Add(messageObject);
 		}
 	}
+	//this repositions messages everytime our location is updated
 	public void UpdateARMessageLocations(Vector2d currentLocation){
 
 		if (currentMessages.Count > 0) {
 
-			Debug.Log ("~~~~~~!!!!!!!GOT UPDATE BITCHES!!!");
+			Debug.Log ("Repositioning Messages...");
 			//here use camera position as reference point in case arkit tracking moved the camera within the scene
 			Vector2d mapRefPoint = new Vector2d (Camera.main.transform.position.x, Camera.main.transform.position.z);
 

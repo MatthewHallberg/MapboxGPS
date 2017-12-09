@@ -17,15 +17,13 @@ namespace Mapbox.Unity.Location
         /// Using higher value like 500 usually does not require to turn GPS chip on and thus saves battery power. 
         /// Values like 5-10 could be used for getting best accuracy.
         /// </summary>
-        [SerializeField]
-        float _desiredAccuracyInMeters = .1f;
+        private float _desiredAccuracyInMeters = .1f;
 
         /// <summary>
         /// The minimum distance (measured in meters) a device must move laterally before Input.location property is updated. 
         /// Higher values like 500 imply less overhead.
         /// </summary>
-        [SerializeField]
-        float _updateDistanceInMeters = .1f;
+       private float _updateDistanceInMeters = .1f;
 
         Coroutine _pollRoutine;
 
@@ -37,7 +35,8 @@ namespace Mapbox.Unity.Location
 
         WaitForSeconds _wait;
 
-        public Vector2d _location;
+
+		private Vector2d _location;
         /// <summary>
         /// Gets the current cached location.
         /// </summary>
@@ -119,7 +118,7 @@ namespace Mapbox.Unity.Location
                     _location = new Vector2d(Input.location.lastData.latitude, Input.location.lastData.longitude);
 					ARMessageProvider.Instance.UpdateARMessageLocations (_location);
 					updateNum++;
-					Debug.Log ("SENDING UPDATE! " + updateNum);
+					Debug.Log ("Loc Update Number... " + updateNum);
 					SendLocationUpdated (_location);
                     _lastLocationTimestamp = timestamp;
                 }
@@ -137,9 +136,9 @@ namespace Mapbox.Unity.Location
 
         void SendLocationUpdated(Vector2d location)
         {
+			Debug.Log ("SEND UPDATE FUNCTION!!!!!!!!!");
 			//this function does not get called and I don't know why!!!!??????????
-
-			if (OnHeadingUpdated != null) {
+			if (OnLocationUpdated != null) {
 				OnLocationUpdated (this, new LocationUpdatedEventArgs () { Location = location });
 			}
         }

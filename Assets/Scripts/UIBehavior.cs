@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIBehavior : MonoBehaviour {
-
+	/// <summary>
+	/// This class houses functions that get called when buttons are pressed 
+	/// in the UI.
+	/// </summary>
 	private static UIBehavior _instance;
 	public static UIBehavior Instance { get { return _instance; } } 
 

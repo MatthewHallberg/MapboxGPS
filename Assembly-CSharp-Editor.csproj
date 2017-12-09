@@ -118,6 +118,7 @@
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
      <None Include="Assets\Mapbox\Core\Plugins\link.xml" />
+     <None Include="Assets\GameSparks\README.txt" />
      <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
@@ -125,7 +126,6 @@
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
      <None Include="Assets\GameSparks\link.xml" />
      <None Include="Assets\CloudCode.txt" />
-     <None Include="Assets\GameSparks\README.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity2017/Unity2017.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

@@ -475,12 +475,7 @@
             <param name="instance">The GSInstance this request will be send with</param>
             <param name="type">Request type name</param>
         </member>
-        <member name="M:GameSparks.Core.GSTypedRequest`2.SetMaxQueueTimeInSeconds(System.Int32)">
-            <summary>
-            Sets the maximum amount of time this request will stay in the send-queue until it will timeout. 
-            </summary>
-        </member>
-        <member name="M:GameSparks.Core.GSTypedRequest`2.SetMaxResponseTimeInSeconds(System.Int32)">
+        <member name="M:GameSparks.Core.GSTypedRequest`2.SetMaxResponseTimeInMillis(System.Int32)">
             <summary>
             Sets the maximum amount of time GSInstance will wait for a response to this request.
             </summary>
@@ -507,7 +502,7 @@
         <member name="M:GameSparks.Core.GSTypedRequest`2.Send(System.Action{`1},System.Int32)">
             <summary>
             Asyncronous send method, provide an Action to handle the callback.
-            The timeoutSeconds parameter indicates how long the request will be queued for in case the SDK is not connected to the GameSparks service.
+            The timeoutMillis parameter indicates how long the request will be queued for in case the SDK is not connected to the GameSparks service.
             It's the callers responsibility to validate whether the response has errors using response.HasErrors
             </summary>
         </member>
@@ -520,7 +515,7 @@
         <member name="M:GameSparks.Core.GSTypedRequest`2.Send(System.Action{`1},System.Action{`1},System.Int32)">
             <summary>
             Asyncronous send method, provide an Action to handle a successful response and an action to handle an error response.
-            The timeoutSeconds parameter indicates how long the request will be queued for in case the SDK is not connected to the GameSparks service.
+            The timeoutMillis parameter indicates how long the request will be queued for in case the SDK is not connected to the GameSparks service.
             </summary>
         </member>
         <member name="P:GameSparks.Core.GSTypedRequest`2.JSONString">
@@ -11396,11 +11391,6 @@
         <member name="P:GameSparks.Core.IGSPlatform.UserId">
             <summary>
             The UserId of the player currently authenticated. 
-            </summary>
-        </member>
-        <member name="P:GameSparks.Core.IGSPlatform.RequestTimeoutSeconds">
-            <summary>
-            Global timeout for all network connections in seconds. 
             </summary>
         </member>
         <member name="P:GameSparks.Core.IGSPlatform.PersistentDataPath">

@@ -1,4 +1,7 @@
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using System.Collections;
 using GameSparks.Core;
 using System.Collections.Generic;
@@ -69,6 +72,8 @@ namespace GameSparks.Platforms
 			string cpuVendor = SystemInfo.processorType;
 			string resolution = Screen.width + "x" + Screen.height;
 			string gssdk = GameSparks.Core.GS.Version;
+			string engine = SDK;
+			string engineVersion = Application.unityVersion;
 			string[] listStrings; 
 
 			switch (DeviceOS) {
@@ -186,6 +191,8 @@ namespace GameSparks.Platforms
 			data.Add ("cpu.vendor", cpuVendor);
 			data.Add ("resolution", resolution);
 			data.Add ("gssdk", gssdk);
+			data.Add ("engine", engine);
+			data.Add ("engine.version", engineVersion);
 
 			DeviceStats = new GSData (data);
 
@@ -197,7 +204,9 @@ namespace GameSparks.Platforms
 			Debug.Log (DeviceStats.GetString ("cpu.cores"));
 			Debug.Log (DeviceStats.GetString ("cpu.vendor"));
 			Debug.Log (DeviceStats.GetString ("resolution"));
-			Debug.Log (DeviceStats.GetString ("gssdk"));*/
+			Debug.Log (DeviceStats.GetString ("gssdk"));
+			Debug.Log (DeviceStats.GetString ("engine"));
+			Debug.Log (DeviceStats.GetString ("engine.version"));*/
 
 #if !GS_DONT_USE_PLAYER_PREFS && !UNITY_SWITCH
             AuthToken = PlayerPrefs.GetString(PLAYER_PREF_AUTHTOKEN_KEY);
@@ -213,11 +222,18 @@ namespace GameSparks.Platforms
 #if !UNITY_WEBPLAYER && !UNITY_SWITCH
             PersistentDataPath = Application.persistentDataPath;
 #endif
-            RequestTimeoutSeconds = 10;
-
+         
 			GS.Initialise(this);
 
 			DontDestroyOnLoad (this);
+
+#if UNITY_EDITOR
+	#if UNITY_2017_2_OR_NEWER
+			EditorApplication.playModeStateChanged += HandlePlayModeStateChanged;
+	#else
+			EditorApplication.playmodeStateChanged = HandlePlayModeStateChanged;
+	#endif
+#endif
 		}
 		
 		private List<Action> _actions = new List<Action>();
@@ -274,14 +290,29 @@ namespace GameSparks.Platforms
 			}
 		}
 
-#if !UNITY_EDITOR
+#if UNITY_EDITOR
+	#if UNITY_2017_2_OR_NEWER
+		void HandlePlayModeStateChanged(PlayModeStateChange state)
+		{
+			if (state == PlayModeStateChange.ExitingPlayMode)
+			{
+				GS.Disconnect ();
+			}
+		}
+	#else
+		void HandlePlayModeStateChanged()
+		{
+			if (!EditorApplication.isCompiling && !EditorApplication.isUpdating && 
+				!EditorApplication.isPlaying && !EditorApplication.isPlayingOrWillChangePlaymode)
+			{
+				GS.Disconnect ();
+			}
+		}
+	#endif
+#else
 		private bool _allowQuitting = false;
-#endif
 
 		virtual protected void OnApplicationQuit(){
-#if UNITY_EDITOR
-			GS.Disconnect();
-#else
 			GS.ShutDown();
 		
             StartCoroutine("DelayedQuit");
@@ -290,10 +321,8 @@ namespace GameSparks.Platforms
 			{
 				Application.CancelQuit();
 			}
-#endif
 		}
 
-#if !UNITY_EDITOR
 		IEnumerator DelayedQuit()
 		{
         	yield return new WaitForSeconds(1.0f);
@@ -403,7 +432,6 @@ namespace GameSparks.Platforms
 
 		public String ApiDomain { get { return null; } }
 
-		public int RequestTimeoutSeconds  {get; set;}
 		public String PersistentDataPath{get; private set;}
 
 
@@ -425,7 +453,7 @@ namespace GameSparks.Platforms
 			});
 		}
 
-		public String SDK{get;set;}
+		public String SDK{get { return "Unity"; } }
 
 		private String m_authToken="0";
 

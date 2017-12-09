@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeviceAuthentication : MonoBehaviour {
-
-	// Use this for initialization
+	/// <summary>
+	/// Authenticates our device with GameSparks. Once authenticated, we show the UI
+	/// and load initial messages. 
+	/// </summary>
 	void Start () {
 		StartCoroutine (DelayAuthenticateRoutine ());
 	}
@@ -19,6 +21,8 @@ public class DeviceAuthentication : MonoBehaviour {
 
 				//set UI active once we are authenticated
 				UIBehavior.Instance.ShowUI();
+				//load first messages
+				MessageService.Instance.LoadAllMessages();
 
 			} else {
 				Debug.Log("Error Authenticating Device...");

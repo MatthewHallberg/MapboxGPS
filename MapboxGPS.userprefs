@@ -1,6 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ARMessageProvider.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ARMessageProvider.cs" Line="10" Column="24" />
+      <File FileName="Assets/Scripts/DeviceAuthentication.cs" Line="8" Column="32" />
+      <File FileName="Assets/Scripts/Message.cs" Line="20" Column="19" />
+      <File FileName="Assets/Scripts/MessageService.cs" Line="11" Column="36" />
+      <File FileName="Assets/Scripts/UIBehavior.cs" Line="9" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

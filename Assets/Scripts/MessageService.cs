@@ -5,6 +5,11 @@ using GameSparks.Core;
 
 public class MessageService : MonoBehaviour {
 
+	/// <summary>
+	/// This class handles communication with gamesparks for
+	/// removing, loading, and writing new messages. New Message
+	/// objects are instantiated here.
+	/// </summary>
 	private static MessageService _instance;
 	public static MessageService Instance { get { return _instance; } } 
 
@@ -12,17 +17,6 @@ public class MessageService : MonoBehaviour {
 
 	void Awake(){
 		_instance = this;
-	}
-
-	// Use this for initialization
-	void Start () {
-		StartCoroutine (DelayTestMessage ());
-	}
-
-	IEnumerator DelayTestMessage(){
-
-		yield return new WaitForSeconds (2f);
-		LoadAllMessages();
 	}
 
 	public void RemoveAllMessages(){
@@ -59,7 +53,7 @@ public class MessageService : MonoBehaviour {
 				Debug.Log("Error Loading Message Data...");
 			}
 		});
-
+		//pass list of objects to ARmessage provider so they can be placed
 		ARMessageProvider.Instance.LoadARMessages (messageObjectList);
 	}
 
