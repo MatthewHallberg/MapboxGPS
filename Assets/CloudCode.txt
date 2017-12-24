@@ -15,7 +15,7 @@ CLOUD CODE FOR INSERTING ENTRY:
 CLOUD CODE FOR DROPPING: 
 
 var messageData = Spark.runtimeCollection("GeoMessage");
-messageData.drop();
+messageData.remove({});
 
 CLOUD CODE FOR READING ALL MESSAGES: 
 
